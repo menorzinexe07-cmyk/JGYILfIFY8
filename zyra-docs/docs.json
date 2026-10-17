@@ -1,0 +1,14 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "ZyraImages",
+  "colors": { "primary": "#10B981", "light": "#34D399", "dark": "#059669" },
+  "navigation": {
+    "groups": [
+      { "group": "Começando", "pages": ["index", "quickstart"] },
+      { "group": "Referência da API", "pages": ["api/upload", "api/get-image", "api/list-images", "api/delete-image", "api/stats", "api/health"] },
+      { "group": "Guias", "pages": ["limites", "erros", "discord"] }
+    ]
+  },
+  "navbar": { "primary": { "type": "button", "label": "Enviar imagem", "href": "https://zyra-uploads.lovable.app/upload" } }
+}

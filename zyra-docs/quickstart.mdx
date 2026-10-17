@@ -1,0 +1,31 @@
+---
+title: "Início rápido"
+description: "Envie uma imagem e receba o link."
+---
+
+<Steps>
+  <Step title="Envie a imagem">
+<CodeGroup>
+```bash cURL
+curl -F "image=@foto.png" https://zyra-uploads.lovable.app/api/v1/images
+```
+```javascript JavaScript
+const form = new FormData();
+form.append("image", arquivo);
+const res = await fetch("https://zyra-uploads.lovable.app/api/v1/images", { method: "POST", body: form });
+const data = await res.json();
+```
+```python Python
+import requests
+with open("foto.png", "rb") as f:
+    data = requests.post("https://zyra-uploads.lovable.app/api/v1/images", files={"image": f}).json()
+```
+</CodeGroup>
+  </Step>
+  <Step title="Use o link">
+    O campo `image.url` (ex.: `https://zyra-uploads.lovable.app/i/img_abc123`) é a imagem direta.
+  </Step>
+  <Step title="Guarde o delete_secret">
+    <Warning>O `delete_secret` só aparece no upload. Sem ele não é possível excluir a imagem.</Warning>
+  </Step>
+</Steps>

@@ -1,0 +1,27 @@
+---
+title: "Enviar imagens"
+api: "POST https://zyra-uploads.lovable.app/api/v1/images"
+description: "Envia uma ou mais imagens (multipart/form-data)."
+---
+
+<ParamField body="image" type="file" required>PNG, JPG, WEBP ou GIF. Repita o campo para enviar várias.</ParamField>
+
+<ResponseExample>
+```json 201
+{
+  "success": true,
+  "image": {
+    "id": "img_a8f31cxk2m",
+    "url": "https://zyra-uploads.lovable.app/i/img_a8f31cxk2m",
+    "filename": "imagem.png",
+    "mime_type": "image/png",
+    "size": 245760,
+    "width": 800,
+    "height": 600,
+    "created_at": "2026-10-16T05:40:00.000Z",
+    "delete_secret": "del_..."
+  },
+  "images": []
+}
+```
+</ResponseExample>

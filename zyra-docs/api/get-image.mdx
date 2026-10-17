@@ -1,0 +1,9 @@
+---
+title: "Consultar imagem"
+api: "GET https://zyra-uploads.lovable.app/api/v1/images/{id}"
+description: "Metadados públicos de uma imagem."
+---
+
+<ParamField path="id" type="string" required>ID no formato `img_...`.</ParamField>
+
+A imagem em si fica em `GET /i/{id}`, com o Content-Type correto.

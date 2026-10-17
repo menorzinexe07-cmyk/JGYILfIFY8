@@ -1,0 +1,9 @@
+---
+title: "Usando no Discord"
+---
+
+O link `/i/{id}` devolve a imagem direta, então o Discord mostra a pré-visualização sozinho.
+
+```javascript discord.js
+await channel.send({ embeds: [{ title: "Minha imagem", image: { url: "https://zyra-uploads.lovable.app/i/img_abc123" } }] });
+```

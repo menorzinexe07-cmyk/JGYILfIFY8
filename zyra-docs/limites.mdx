@@ -1,0 +1,15 @@
+---
+title: "Limites"
+description: "Valores padrão; os atuais estão em /api/v1/stats."
+---
+
+| Limite | Padrão |
+|---|---|
+| Tamanho por arquivo | 10 MB |
+| Arquivos por requisição | 10 |
+| Requisições por minuto por IP | 60 |
+| Uploads por hora por IP | 30 |
+| Tentativas de exclusão | 20 a cada 10 minutos por IP |
+| Formatos | PNG, JPG, JPEG, WEBP, GIF (conteúdo verificado) |
+
+<Note>Ao passar do limite você recebe `429` com o cabeçalho `Retry-After`.</Note>

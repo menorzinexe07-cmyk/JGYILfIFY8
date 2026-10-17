@@ -1,0 +1,19 @@
+---
+title: "Códigos de erro"
+---
+
+```json
+{ "success": false, "error": { "code": "invalid_image", "message": "..." } }
+```
+
+| Status | Códigos |
+|---|---|
+| 400 | missing_file, invalid_form, too_many_files, invalid_id, invalid_sort, invalid_order |
+| 401 | missing_delete_secret |
+| 403 | forbidden, ip_blocked |
+| 404 | not_found |
+| 413 | file_too_large, payload_too_large |
+| 415 | invalid_image, unsupported_media_type |
+| 429 | rate_limited, upload_limit |
+| 503 | uploads_disabled |
+| 507 | storage_full |

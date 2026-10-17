@@ -1,0 +1,8 @@
+---
+title: "Excluir imagem"
+api: "DELETE https://zyra-uploads.lovable.app/api/v1/images/{id}"
+description: "Exclui uma imagem usando o segredo recebido no upload."
+---
+
+<ParamField path="id" type="string" required>ID da imagem.</ParamField>
+<ParamField header="X-Delete-Secret" type="string" required>Segredo `del_...`. Também aceito no corpo JSON como `delete_secret`.</ParamField>
